@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// Pivot element here, mhanje to element jyacha left side cha sum = right side cha sum.
+
 int main()
 {
     int n;
@@ -20,7 +22,7 @@ int main()
     // int sum1 = 0, sum2 = 0;
     bool flag = false;
 
-    while (l <= h)
+    while (l < h)
     {
         int i = 0;
         int sum1 = 0, sum2 = 0;
