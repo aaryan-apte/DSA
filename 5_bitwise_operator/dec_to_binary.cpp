@@ -1,3 +1,8 @@
+// Enter value of n:
+// 20
+
+// 10100
+
 #include <iostream>
 #include <math.h>
 using namespace std;

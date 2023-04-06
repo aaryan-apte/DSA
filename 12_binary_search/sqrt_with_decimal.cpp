@@ -62,7 +62,6 @@ int main()
             h1 = mid2 * 100;
         }
         mid2 = (l1 + (h1 - l1) / 2) / 100;
-    }
-
+        }
     return 0;
 }

@@ -8,7 +8,7 @@ int main()
     cin >> n;
     cout << endl;
 
-    int a[n];
+    int a[100];
     for (int i = 0; i < n; i++)
     {
         cin >> a[i];

@@ -1,3 +1,7 @@
+// XOR karat jaicha... 1 to n-1 ashnarach aahet elements.
+// a^a = 0... so, saglyancha apaplya position shi XOR = 0.
+// Urla fakta x(repeating number)... ani x ^ 0 = x. Kara print x la...
+
 #include <iostream>
 using namespace std;
 
@@ -29,14 +33,13 @@ void duplic_among_1_to_n_1(int a[], int n)
 void more_than_once_among_1_to_n_1(int a[], int n)
 {
     int ans = 0;
-    int b[n];
+    int b[1000];
     int b_count = 0;
     for (int i = 0; i < n; i++)
-        +
-        {
-            ans = ans ^ a[i];
-            ans = ans ^ i;
-        }
+    {
+        ans = ans ^ a[i];
+        ans = ans ^ i;
+    }
     cout << ans;
 }
 

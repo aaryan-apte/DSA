@@ -1,3 +1,5 @@
+// Ikde, 10001 asel number in binary, tyala 01110 karaychay.
+
 #include <iostream>
 #include <math.h>
 using namespace std;
@@ -14,6 +16,7 @@ int main()
     while (n != 0)
     {
         int bit = (n & 1);
+
         if (bit == 1)
             bit = 0;
         else

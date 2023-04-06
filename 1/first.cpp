@@ -1,3 +1,5 @@
+// Bit kadhayla n&1 karaycha.S
+
 #include <iostream>
 #include <string>
 #include <math.h>
@@ -61,16 +63,24 @@ int nCr(int n, int r)
     return factorial(n) / (factorial(n - r) * factorial(r));
 }
 
-bool check_prime(int n)
+int check_prime(int n)
 {
+    if (n == 1)
+    {
+        return -1; // sneither
+    }
+    else if (n == 2)
+    {
+        return 1;
+    }
     for (int i = 2; i < sqrt(n); i++)
     {
         if (n % i == 0)
         {
-            return true;
+            return 1;
         }
     }
-    return false;
+    return 0;
 }
 int main()
 {

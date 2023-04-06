@@ -3,7 +3,7 @@ using namespace std;
 
 void array_reverse(int arr[], int n)
 {
-    int barr[n];
+    int barr[100];
     for (int i = 0; i < n; i++)
     {
         barr[i] = arr[n - i - 1];

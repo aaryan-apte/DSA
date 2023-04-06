@@ -1,3 +1,5 @@
+// In a binary array, sagle 1s ujvikade move karayche.
+
 #include <iostream>
 using namespace std;
 
@@ -8,7 +10,7 @@ int main()
     cin >> n;
     cout << endl;
 
-    int arr[n];
+    int arr[100];
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];

@@ -1,3 +1,5 @@
+// Common set bits.
+
 #include <iostream>
 using namespace std;
 
@@ -33,12 +35,12 @@ int set_bits(int a, int b)
 int main()
 {
     int a, b;
-    cout << "Enter value of  a and b:\n";
+    cout << "Enter value of a and b:\n";
     cin >> a >> b;
     cout << endl;
 
     cout << set_bits(a, b);
-    cout << true;
+    // cout << true;
 
     return 0;
 }

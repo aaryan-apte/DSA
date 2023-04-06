@@ -1,3 +1,5 @@
+// Starting from beginning of 2 sorted arrays, tula common subsequence kadhaychay. Similar to merge sort aahe implementation.
+
 #include <iostream>
 using namespace std;
 
@@ -8,7 +10,7 @@ int main()
     cin >> n >> m;
     cout << endl;
 
-    int a[n], b[m];
+    int a[100], b[100];
 
     for (int i = 0; i < n; i++)
     {
@@ -20,7 +22,7 @@ int main()
     }
 
     int i = 0, j = 0, k = 0;
-    int c[n + m];
+    int c[200];
 
     while (i < n && j < m)
     {

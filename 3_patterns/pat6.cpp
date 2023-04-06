@@ -1,3 +1,11 @@
+// A
+// B C
+// C D E
+// D E F G
+// E F G H I
+// F G H I J K
+// G H I J K L M
+
 #include <iostream>
 using namespace std;
 
