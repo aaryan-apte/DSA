@@ -42,6 +42,15 @@
         "xmemory": "cpp",
         "xstddef": "cpp",
         "xtr1common": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "array": "cpp",
+        "vector": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "stack": "cpp",
+        "queue": "cpp",
+        "algorithm": "cpp",
+        "set": "cpp",
+        "xtree": "cpp"
     }
 }
