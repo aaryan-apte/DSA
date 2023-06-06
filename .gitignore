@@ -2,3 +2,4 @@
 settings.json
 tasks.json
 *.exe
+miniproj.cpp

@@ -2,6 +2,8 @@
 #include <vector>
 using namespace std;
 
+// Ikde, jar string is "aaaabbbbbb" then we return chars as "a4b6" and return 4;
+
 int compress(vector<char> &chars)
 {
     int i = 0;
