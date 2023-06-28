@@ -27,34 +27,38 @@ string reduceTarget(string target, string str)
     return result;
 }
 
-bool canConstruct(string target, string strs[], int n, map<string, bool> mem)
+int canConstruct(string target, string strs[], int n, map<string, int> mem)
 {
     auto it = mem.find(target);
     if (it != mem.end())
         return mem[target];
 
     if (target.length() == 0)
-        return true;
+        return 1;
+
+    int totalCount = 0;
 
     for (int i = 0; i < n; i++)
     {
         if (isStartingSubset(target, strs[i]))
         {
             string rem = reduceTarget(target, strs[i]);
-            if (canConstruct(rem, strs, n, mem))
-            {
-                mem[rem] = true;
-                return true;
-            }
+
+            totalCount += canConstruct(rem, strs, n, mem);
+            // if (canConstruct(rem, strs, n, mem))
+            // {
+            //     mem[rem] = ;
+            //     return true;
+            // }
         }
     }
-    mem[target] = false;
-    return false;
+    mem[target] = totalCount;
+    return totalCount;
 }
 
 int main()
 {
-    map<string, bool> mem;
+    map<string, int> mem;
 
     string target = "skateboard";
     string strs[7] = {"bo", "rd", "ate", "t", "ska", "sk", "obar"};
