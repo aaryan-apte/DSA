@@ -7,7 +7,7 @@ int main()
     cout << "Enter value of n:\n";
     cin >> n;
     cout << endl;
-    int a[n];
+    int a[1000];
 
     for (int i = 0; i < n; i++)
     {

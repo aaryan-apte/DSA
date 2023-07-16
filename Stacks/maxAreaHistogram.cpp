@@ -36,7 +36,7 @@ vector<int> nearestSmallerLeft(vector<int> &nums)
 
 vector<int> nearestSmallerRight(vector<int> &nums)
 {
-    vector<int> ans(0, nums.size());
+    vector<int> ans;
     stack<pair<int, int>> st;
 
     ans.push_back(nums.size());
