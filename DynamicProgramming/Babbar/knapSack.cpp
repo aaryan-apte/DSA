@@ -9,6 +9,10 @@
 #include <algorithm>
 using namespace std;
 
+int knapsack()
+{
+}
+
 int main()
 {
 
