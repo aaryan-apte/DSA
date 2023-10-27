@@ -25,6 +25,14 @@ public:
     {
         cout << "Health: " << health << "\nName: " << name << endl;
     }
+
+    static void changeTime(int t)
+    {
+        cout << "Previous value of time: " << time << endl;
+        time = t;
+        cout << "Current value of time: " << time << endl;
+        health = 6;
+    }
 };
 
 int Hero::time = 6;
@@ -37,6 +45,7 @@ int main()
     cout << Hero::time << endl;
     Hero::time = 10;
     cout << Hero::time << endl;
+    Hero::changeTime(6);
 
     delete h;
 
